@@ -1,38 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>M.G.A. Pubblicità | Cartelloni 6x3 e Camion Vela a Salerno</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      scroll-behavior: smooth;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      line-height: 1.5;
     }
-  </style>
-</head>
-<body class="bg-slate-50 text-slate-900 antialiased">
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
 
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-      <a href="#" class="text-lg sm:text-xl font-extrabold tracking-tight text-slate-900">
-        M.G.A. <span class="text-amber-600">Pubblicità</span>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
-        <a href="#postazioni" class="hover:text-amber-600 transition">Postazioni 6x3</a>
-        <a href="#camion-vela" class="hover:text-amber-600 transition">Camion Vela</a>
-        <a href="#perche-sceglierci" class="hover:text-amber-600 transition">Perché sceglierci</a>
-        <a href="#contatti" class="hover:text-amber-600 transition">Contatti</a>
-      </nav>
-      <a href="#contatti" class="inline-flex items-center justify-center rounded-lg bg-amber-600 px-4 py-2 text-sm font-bold text-white shadow-sm hover:bg-amber-700 transition">
-        Richiedi preventivo
-      </a>
-    </div>
-  </header>
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 14px 0;
+    }
+    .brand {
+      font-size: 20px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #0f172a;
+    }
+    .brand span { color: #d97706; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a {
+      text-decoration: none;
+      color: #475569;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    nav a:hover { color: #d97706; }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 14px;
+    }
+    .btn-primary { background: #d97706; color: #ffffff; }
+    .btn-primary:hover { background: #b45309; }
+    .btn-light {
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
 
-  <section class="bg-slate-900 text-white py-1
+    .hero {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 64px 0;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.18);
+      color: #fcd34d;
+      border: 1px solid rgba(251, 191, 36, 0.35);
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .hero h1 { font-size: 36px; line-height: 1.2; margin-bottom: 16px; max-width: 780px; }
+    .hero p { color: #cbd5e1; font-size: 17px; max-width: 720px; margin-bottom: 26px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    section.pad { padding: 64px 0; }
+    section.white-band { background: #ffffff; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
+    .sec-title { font-size: 28px; font-weight: 800; margin-bottom: 10px; color: #0f172
